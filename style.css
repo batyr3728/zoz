@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #E8F5E9;
+    color: #263238;
+}
+
+/* Навигация */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background: #1B5E20;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.nav-btn {
+    padding: 16px 18px;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s;
+}
+
+.nav-btn:hover {
+    background: #2E7D32;
+}
+
+.nav-btn.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 70%;
+    height: 4px;
+    background: #81C784;
+    border-radius: 4px;
+}
+
+/* Контент */
+.content {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+}
+
+.page {
+    display: none;
+    background: #FFFFFF;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.page.active {
+    display: block;
+}
+
+h1 {
+    color: #2E7D32;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 22px;
+    color: #1B5E20;
+}
+
+p {
+    line-height: 1.7;
+}
+
+
+.vitamin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.vitamin-table th {
+    background: #2E7D32;
+    color: white;
+    padding: 12px;
+}
+
+.vitamin-table td {
+    background: #A5D6A7;
+    padding: 10px;
+    text-align: center;
+}
+
+.vitamin-table tr:nth-child(even) td {
+    background: #C8E6C9;
+}
